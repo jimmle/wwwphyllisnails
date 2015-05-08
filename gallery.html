@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+<dev class="lmenu">
+<ul>
+<li class="lmenu" onclick="location.href='index.php'">home</li>
+<li class="lmenu" onclick="location.href='menu.html'">menu</li>
+<li class="lmenu" onclick="location.href='promotions.html'">promotions</li>
+<li class="lmenu" onclick="location.href='gallery.html'">gallery</li>
+<li class="lmenu" onclick="location.href='contact.html'">contact</li>
+</ul>
+</dev>
+
+<!--content-->
+<div class="gallery">
+<img id="image" src="one.jpg" alt="phyllisnails" onclick="next_pic()" style="cursor:pointer;"></img>
+</div>
+<p style="position: relative; left: 15em;"> Click on the image to go next.</p>
+
+<script>
+	var image_list = ["one.jpg", "two.jpg"];
+	var count=0;
+	function next_pic(){
+		count++;
+		if(count==2) count=0;
+		document.getElementById("image").src = image_list[count];
+	}
+</script>
+</body>
+</html>

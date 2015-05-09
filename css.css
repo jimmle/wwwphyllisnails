@@ -1,16 +1,54 @@
 body{
+	font-family: "Lucida Console", Monaco, monospace;
 	background-color: beige;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50em;
 }
-dev.lmenu{
+.header{
+	height: 3em;
+	background-color: navy;
+}
+#header{
+	position: relative;
+	top: .3em;
+	color: white;
+	text-align: center;
+}
+.article{
+	position: relative;
+	width: 38em; 
+	height: 37em; 
+	background-color: white;
+	overflow: hidden;
+}
+#article{
+	position: relative; 
+	left: .9em; 
+	top: .1em;
+}
+#photo{
+	width: auto;
+	height: auto;
+}
+.full_article{
+	background-color:white;
+	width: auto;
+	height: 40em;
+}
+div.lmenu{
 	float: left;
-	border-right-style: solid; 
-	border-width: .2em; 
-	width: 15em; 
-	height: 22em;
+	color: white;
+	background-color: gray;
+	display: block;
+	width: 12em; 
+	height: 40em;
 }
 li.lmenu{
-	font-family: "Lucida Console", Monaco, monospace;
-	padding: .5em;
+	position: relative;
+	left: -1.3em;
+	top: 1em;
+	padding: .4em;
 	font-size: 1.5em;
 	list-style-type: none;
 	transition: font-size 1s;
@@ -19,13 +57,16 @@ li.lmenu:hover{
 	font-size: 1.9em;
 	cursor: pointer;
 }
-div.gallery{
+.gallery{
+	background-color: white;
 	overflow: scroll;
-	display: block;
 	position: relative;
 	border: solid 1px;
-	height: 21.9em;
-	width: 30em;
+	height: 40em;
+	width: 37em;
 	left: 15em auto;
 	vertical-align: text-top;
+}
+.inline{
+	line-height: 0em;
 }

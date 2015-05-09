@@ -5,30 +5,33 @@
 <link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
-<dev class="lmenu">
-<ul style="font-family: "Lucida Console", Monaco, monospace;">
+<div class="lmenu" style="z-index: 1;">
+<ul>
 <li class="lmenu" onclick="location.href='index.php'">home</li>
 <li class="lmenu" onclick="location.href='menu.html'">menu</li>
 <li class="lmenu" onclick="location.href='promotions.html'">promotions</li>
 <li class="lmenu" onclick="location.href='gallery.html'">gallery</li>
 <li class="lmenu" onclick="location.href='contact.html'">contact</li>
 </ul>
-</dev>
+</div>
 
-<!--content287.6-->
-<h1>Welcome to Phyllis Nails</h1>
-<img id="photo" src="one.jpg" alt="lynn" width="auto" height="293em" style="transition: src 1s;"></img> 
+<!--content-->
+<div class="header">
+<h1 id="header">Welcome to Phyllis Nails</h1>
+</div>
+
+<div class="article">
+<img id="photo" src="one.jpg" alt="lynn" style="transition: src 1s;"></img> 
+</div>
 
 <script>
-	var count = 0;
+	var image_list = ["one.jpg", "two.jpg", "three.jpg", "four.jpg", "five.jpg", "six.jpg", "seven.jpg", "eight.jpg", "nine.jpg", "ten.jpg"];
+	var count=0;
 	setInterval(function() {change_pic()}, 3000);
 	function change_pic(){
-		var pic = document.getElementById("photo").src;	
-		if(count%2 < 1)
-			document.getElementById("photo").src="two.jpg";
-		else
-			document.getElementById("photo").src="one.jpg";
 		count++;
+		if(count==10) count=0;
+		document.getElementById("photo").src = image_list[count];
 	}
 </script>
 </body>

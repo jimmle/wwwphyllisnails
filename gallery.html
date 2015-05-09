@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
-<dev class="lmenu">
+<div class="lmenu">
 <ul>
 <li class="lmenu" onclick="location.href='index.php'">home</li>
 <li class="lmenu" onclick="location.href='menu.html'">menu</li>
@@ -13,20 +13,24 @@
 <li class="lmenu" onclick="location.href='gallery.html'">gallery</li>
 <li class="lmenu" onclick="location.href='contact.html'">contact</li>
 </ul>
-</dev>
+</div>
 
 <!--content-->
-<div class="gallery">
-<img id="image" src="one.jpg" alt="phyllisnails" onclick="next_pic()" style="cursor:pointer;"></img>
+<div class="header">
+<h1 id="header">Gallery</h1>
 </div>
-<p style="position: relative; left: 15em;"> Click on the image to go next.</p>
+
+<div class="article">
+<img id="image" src="one.jpg" alt="phyllisnails" onclick="next_pic()" style="cursor:pointer;"></img>
+<p style="position: relative; left: .2em;">Click on the image to go next.</p>
+</div>
 
 <script>
-	var image_list = ["one.jpg", "two.jpg"];
+	var image_list = ["one.jpg", "two.jpg", "three.jpg", "four.jpg", "five.jpg", "six.jpg", "seven.jpg", "eight.jpg", "nine.jpg", "ten.jpg"];
 	var count=0;
 	function next_pic(){
 		count++;
-		if(count==2) count=0;
+		if(count==10) count=0;
 		document.getElementById("image").src = image_list[count];
 	}
 </script>

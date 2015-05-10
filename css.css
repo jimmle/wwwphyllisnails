@@ -25,11 +25,9 @@ body{
 #article{
 	position: relative; 
 	left: .9em; 
-	top: .1em;
+	top: .9em;
 }
 #photo{
-	width: auto;
-	height: auto;
 }
 .full_article{
 	background-color:white;

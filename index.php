@@ -21,7 +21,9 @@
 </div>
 
 <div class="article">
-<img id="photo" src="one.jpg" alt="lynn" style="transition: src 1s;"></img> 
+<div id="article">
+<img id="photo" src="one.jpg" alt="lynn" style="transition: src 2s;" width="580" height="562"></img> 
+</div>
 </div>
 
 <script>
